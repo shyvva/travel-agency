@@ -9,13 +9,12 @@ import Countries from './components/views/Countries/CountriesContainer';
 import Regions from './components/views/Regions/RegionsContainer';
 import Country from './components/views/Country/CountryContainer';
 import Trip from './components/views/Trip/TripContainer';
-// TODO - import other views
 import Info from './components/views/Info/Info';
 import NotFound from './components/views/NotFound/NotFound';
 import { AnimatedSwitch } from 'react-router-transition';
 import parseTrips from './utils/parseTrips';
 import { setMultipleStates } from './redux/globalRedux';
-import styles from './styles/App.scss';
+import styles from './App.scss';
 
 class App extends React.Component {
   static propTypes = {
@@ -41,10 +40,11 @@ class App extends React.Component {
       <BrowserRouter>
         <MainLayout>
           <AnimatedSwitch
-            atEnter={{ opacity: 0, top: 200}}
+            atEnter={{ opacity: 0, top: 200 }}
             atLeave={{ opacity: 0 }}
             atActive={{ opacity: 1, top: 0 }}
             className={styles.switchWrapper}
+
           >
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />

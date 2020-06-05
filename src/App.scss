@@ -1,4 +1,4 @@
-@import './settings.scss';
+@import './styles/settings.scss';
 
 .switchWrapper {
   position: relative;
@@ -7,4 +7,5 @@
 
 .switchWrapper > * {
   position: absolute;
+  width: 100%;
 }
