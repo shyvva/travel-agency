@@ -1,0 +1,10 @@
+@import './settings.scss';
+
+.switchWrapper {
+  position: relative;
+  transition: $transition;
+}
+
+.switchWrapper > * {
+  position: absolute;
+}
