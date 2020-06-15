@@ -15,7 +15,7 @@ const TripSummary = ({id, image, name, cost, days, tags}) => (
           <span>from {cost}</span>
         </div>
         {tags.length == 0 ?
-          ''
+          null
           :
           <div className={styles.tags}>
             {tags.map(tag => (

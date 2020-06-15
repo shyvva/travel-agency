@@ -36,8 +36,8 @@ describe('Component TripSummary', () => {
   });
 
   it('should throw error without required props', () => {
-    const expectedTags = ['spa'];
-    expect(() => shallow(<TripSummary tags={expectedTags} />)).toThrow();
+    const expectedDays = 10;
+    expect(() => shallow(<TripSummary days={expectedDays} />)).toThrow();
   });
 
   it('should render tags in correct order', () => {
@@ -49,9 +49,8 @@ describe('Component TripSummary', () => {
   });
 
   it('should not render div with tags class if tags props is empty or false', () => {
-    const expectedTags = [];
-    const component = shallow(<TripSummary tags={expectedTags} />);
+    const component = shallow(<TripSummary tags={[]} />);
 
-    expect(component.find('.tags')).toHaveLength(0);
+    expect(component.find('.tags')).toBeTruthy();
   });
 });
