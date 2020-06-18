@@ -33,9 +33,8 @@ describe('Component TripSummary', () => {
     const expectedCost = '5';
     const expectedDays = 10;
     const expectedImage = 'exampleImage';
-    const expectedLenght = 0;
     const expectedId = 'abc';
-    const component = shallow(<TripSummary name={expectedName} cost={expectedCost} days={expectedDays} image={expectedImage} lenght={expectedLenght}
+    const component = shallow(<TripSummary name={expectedName} cost={expectedCost} days={expectedDays} image={expectedImage}
       id={expectedId} />);
 
     const renderDays = component.find('span').first().text();
