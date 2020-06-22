@@ -43,7 +43,7 @@ describe('Component TripSummary', () => {
 
     expect(renderDays).toEqual(`${expectedDays} days`);
     expect(renderName).toEqual(expectedName);
-    expect(renderCost).toEqual(`from $${expectedCost}`);
+    expect(renderCost).toEqual(`Price from $${expectedCost}`);
   });
 
   it('should throw error without required props', () => {

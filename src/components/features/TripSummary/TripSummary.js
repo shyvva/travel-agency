@@ -15,7 +15,7 @@ const TripSummary = ({ id, image, name, cost, days, tags }) => (
         <h3 className={styles.title}>{name}</h3>
         <div className={styles.details}>
           <span>{days} days</span>
-          <span>from {formatPrice(promoPrice(Number(cost.replace('$', '').replace(',','')), settings.discount))}</span>
+          <span>Price from {formatPrice(promoPrice(Number(cost.replace('$', '').replace(',','')), settings.discount))}</span>
         </div>
         {tags != undefined && tags.length > 0 ?
           <div className={styles.tags}>
