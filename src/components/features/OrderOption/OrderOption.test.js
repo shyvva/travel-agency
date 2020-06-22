@@ -114,13 +114,13 @@ for (let type in optionTypes) {
         /* tests for icons */
         it('contains div and Icon', () => {
           const div = renderedSubcomponent.find('.icon');
-          expect(div.length).toBe(1);
+          expect(div.length).toBe(2);
           const icon = renderedSubcomponent.find('Icon');
           expect(icon.length).toBe(2);
         });
         it('should run setOrderOption function on click', () => {
-          renderedSubcomponent.find('.icon').simulate('click');
-          expect(mockSetOrderOption).toBeCalledTimes(0);
+          renderedSubcomponent.find('.icon').last().simulate('click');
+          expect(mockSetOrderOption).toBeCalledTimes(1);
         });
         break;
       }
