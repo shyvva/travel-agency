@@ -9,6 +9,10 @@
     height: 4px;
     top: ($base-size * -1);
     left: 0;
-    background: $color-dark;
+    background: $color-primary;
+  }
+  .regular {
+    font-size: 16px;
+    opacity: 0.7;
   }
 }

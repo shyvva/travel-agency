@@ -99,6 +99,20 @@
       "start-date": "",
       "totalCost": "$852,590",
       "id": 7
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "hotel",
+      "features": [
+        "pool"
+      ],
+      "adults": "3",
+      "children": "2",
+      "name": "asd",
+      "contact": "asd",
+      "start-date": "",
+      "totalCost": "$524,005",
+      "id": 8
     }
   ]
 }

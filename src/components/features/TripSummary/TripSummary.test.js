@@ -30,7 +30,7 @@ describe('Component TripSummary', () => {
 
   it('should render correct name, cost and days props', () => {
     const expectedName = 'exampleName';
-    const expectedCost = '5';
+    const expectedCost = '3';
     const expectedDays = 10;
     const expectedImage = 'exampleImage';
     const expectedId = 'abc';
@@ -43,7 +43,7 @@ describe('Component TripSummary', () => {
 
     expect(renderDays).toEqual(`${expectedDays} days`);
     expect(renderName).toEqual(expectedName);
-    expect(renderCost).toEqual(`from ${expectedCost}`);
+    expect(renderCost).toEqual(`from $${expectedCost}`);
   });
 
   it('should throw error without required props', () => {

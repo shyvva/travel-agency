@@ -5,6 +5,7 @@ const settings = {
       orders: 'orders',
     },
   },
+  discount : 15,
 };
 
 export default settings;
